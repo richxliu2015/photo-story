@@ -11,6 +11,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import CameraScreen from './src/screens/CameraScreen';
 import StoryScreen from './src/screens/StoryScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
+import StoryEditorScreen from './src/screens/StoryEditorScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -55,6 +56,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Main" component={TabNavigator} />
+          <Stack.Screen name="StoryEditor" component={StoryEditorScreen} />
         </Stack.Navigator>
         <StatusBar style="auto" />
       </NavigationContainer>

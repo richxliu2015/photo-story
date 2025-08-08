@@ -15,7 +15,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const { width } = Dimensions.get('window');
 
-const StoryScreen: React.FC = () => {
+const StoryScreen: React.FC = ({ navigation }: any) => {
   const [selectedFilter, setSelectedFilter] = useState('all');
 
   const stories = [
@@ -132,7 +132,10 @@ const StoryScreen: React.FC = () => {
       />
 
       {/* Floating Action Button */}
-      <TouchableOpacity style={styles.fab}>
+      <TouchableOpacity 
+        style={styles.fab}
+        onPress={() => navigation.navigate('StoryEditor')}
+      >
         <Ionicons name="add" size={24} color="#fff" />
       </TouchableOpacity>
     </SafeAreaView>

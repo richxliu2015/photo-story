@@ -14,7 +14,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 const { width } = Dimensions.get('window');
 
-const HomeScreen: React.FC = () => {
+const HomeScreen: React.FC = ({ navigation }: any) => {
   const recentStories = [
     { id: 1, title: 'Summer Vacation', date: '2024-01-15', imageCount: 12 },
     { id: 2, title: 'City Adventure', date: '2024-01-10', imageCount: 8 },
@@ -41,7 +41,10 @@ const HomeScreen: React.FC = () => {
           <Text style={styles.welcomeSubtitle}>
             Capture moments and turn them into beautiful stories
           </Text>
-          <TouchableOpacity style={styles.createButton}>
+          <TouchableOpacity 
+            style={styles.createButton}
+            onPress={() => navigation.navigate('StoryEditor')}
+          >
             <Ionicons name="add" size={20} color="#fff" />
             <Text style={styles.createButtonText}>New Story</Text>
           </TouchableOpacity>

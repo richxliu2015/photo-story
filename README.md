@@ -13,6 +13,7 @@ A modern cross-platform mobile application for creating and sharing beautiful ph
 - **Photo Capture**: Take photos directly within the app
 - **Gallery Integration**: Select photos from device gallery
 - **Story Creation**: Organize photos into themed stories
+- **AI Story Generation**: Automatically generate 200-word story drafts using AI
 - **Modern UI**: Beautiful, intuitive interface with smooth animations
 - **Profile Management**: User profiles with statistics and settings
 
@@ -121,6 +122,8 @@ npm run ios
 - [x] Camera screen with basic UI
 - [x] Stories screen with grid layout
 - [x] Profile screen with user info
+- [x] AI story generation with OpenAI integration
+- [x] Story editor with category selection
 
 ### Phase 2: Camera Integration 🔄
 - [ ] Full camera functionality
